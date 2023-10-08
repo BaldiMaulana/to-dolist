@@ -1,0 +1,47 @@
+body{
+    font-family:Poppins;
+}
+
+
+ul {
+    margin-top: 4px;
+}
+
+ul li {
+    margin-top: 4px;
+    background-image: url("images/unchecked.png");
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: left center;
+    padding-left: 24px;
+    list-style-type: none;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul li.checked {
+    background-image: url("images/checked.png");
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 24px;
+    color: #555;
+    text-decoration: line-through; /* Tetapkan garis melintang untuk teks li yang "checked" */
+}
+
+ul li.checked span {
+    text-decoration: none; /* Hapus dekorasi teks (line-through) pada ikon "X" yang di dalam li yang "checked" */
+}
+
+ul li.checked::before {
+    background-image: url("images/checked.png");
+}
+
+ul li span {
+    position: relative;
+    cursor: pointer;
+    font-size: 24px;
+    margin-left: auto;
+}

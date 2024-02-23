@@ -11,17 +11,21 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,600&display=swap" rel="stylesheet">
 </head>
-<body class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
-    <div class="container mt-96 flex justify-center items-center">
-    <div class="md:p-5 col-row bg-white rounded-xl border-4 border-black drop-shadow-5xl text-center">
-        <h1 class="text-5xl text-center hover:italic hover:animate-bounce">📚To-Do List</h1>
-            <input type="text" class="mt-5 bg-gray-200 p-4 rounded-full pr-20"  placeholder="Tambahin List" id="inputBox"/>
-                <button id="addTaskButton" onclick="addTask()" class="bg-gradient-to-r p-4 rounded-xl -z-10 hover:text-white">Add</button>
-                <button id="clearAllButton"  class="bg-gradient-to-r p-4 rounded-xl -z-10 mt-2 hover:text-white ">Reset</button>
-            <ul id="listContainer">
-                <li class="checked">
-                </li>
-            </ul>
+<body>
+    <div class="bg-gray-900 h-screen justify-center items-center flex">
+        <div class="flex justify-center items-center">
+            <div class="md:p-5 col-row bg-white rounded-xl border-4 border-black drop-shadow-5xl text-center">
+                <h1 class="text-5xl text-center hover:italic hover:animate-bounce">📚To-Do List</h1>
+                <div class="gap-4 ">
+                        <input type="text" class="mt-5 bg-gray-200 p-4 rounded-full"  placeholder="Tambahin List" id="inputBox"/>
+                            <button id="addTaskButton" onclick="addTask()" class="bg-black text-white p-2 rounded-xl">Add</button>
+                            <button id="clearAllButton" class="bg-black text-white p-2 rounded-xl">Reset</button>
+                    </div>
+                    <ul id="listContainer">
+                        <li class="checked">
+                        </li>
+                    </ul>
+                </div>
         </div>
     </div>
     <script src="input.js"></script>
